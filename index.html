@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="l.jpg" alt="University Campus" class="header-image">
+    </header>
+
+    <div class="login-container">
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="password" id="studentPassword" placeholder="Password">
+        <button id="loginButton">Enter</button>
+        <p id="errorMessage" style="color: rgb(255, 255, 255); display: none;"></p>
+        <p id="ditail" style="display: none;"></p>
+    </div>
+
+    <div id="studentInfo" style="display: none;">
+        <div id="studentDisplayName"></div>
+        <div id="department"></div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Class Year</th>
+                    <th>Semester</th>
+                    <th>Academic Year</th>
+                    <th>Credit Hours</th>
+                    <th>Total</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Horn International University College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
